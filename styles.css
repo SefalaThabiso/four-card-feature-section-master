@@ -44,6 +44,7 @@ main {
   max-width: 320px;
   font-weight: var(--fw-light);
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .title {
@@ -59,6 +60,7 @@ main {
   display: grid;
   gap: 1rem;
   justify-content: flex-end;
+  margin: 0 1rem;
 }
 
 .middle-blocks {
@@ -70,7 +72,8 @@ main {
   padding: 1rem;
   border-radius: 8px;
   max-width: 400px;
-  height: 200px;
+  min-height: 200px;
+  overflow: hidden;
   margin: 0 auto;
   box-shadow: -5px 5px 26px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -5px 5px 26px 0px rgba(0, 0, 0, 0.75);
