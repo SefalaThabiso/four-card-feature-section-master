@@ -1,0 +1,129 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --clr-Red: hsl(0, 78%, 62%);
+  --clr-Cyan: hsl(180, 62%, 55%);
+  --clr-Orange: hsl(34, 97%, 64%);
+  --clr-Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --clr-neutral-300: hsl(234, 12%, 34%);
+  --clr-neutral-200: hsl(229, 6%, 66%);
+  --clr-neutral-100: hsl(0, 0%, 98%);
+
+  /* font size */
+  --fs-main: 15px;
+
+  /* font family */
+  --ff-main: "Poppins", sans-serif;
+
+  /* font weight */
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+main {
+  font-family: var(--ff-main);
+  color: var(--clr-neutral-300);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  padding: 4rem 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title-block {
+  padding-bottom: 4rem;
+  max-width: 320px;
+  font-weight: var(--fw-light);
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: var(--fw-light);
+  padding-bottom: 1rem;
+}
+
+.bold-weight {
+  font-weight: var(--fw-bold);
+}
+
+.blocks {
+  display: grid;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.middle-blocks {
+  display: grid;
+  gap: 1rem;
+}
+
+.block {
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  box-shadow: -5px 5px 26px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 5px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 5px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.block img {
+  float: right;
+  margin-top: 24px;
+}
+
+.blue-border {
+  border-top: 3px solid var(--clr-Blue);
+}
+
+.cyan-border {
+  border-top: 3px solid var(--clr-Cyan);
+}
+
+.orange-border {
+  border-top: 3px solid var(--clr-Orange);
+}
+
+.red-border {
+  border-top: 3px solid var(--clr-Red);
+}
+
+@media (min-width: 700px) {
+  .title-block {
+    padding-bottom: 2rem;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .middle-blocks {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1239px) {
+  .title-block {
+    padding-bottom: 1rem;
+  }
+
+  .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .middle-blocks {
+    display: grid;
+    gap: 1rem;
+  }
+}
